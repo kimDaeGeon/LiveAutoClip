@@ -66,5 +66,3 @@ class ChatAnalyze:
     def __del__(self):
         self.filehandler.close()
 
-
-    def 
