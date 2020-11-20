@@ -7,29 +7,29 @@
 
 ---
 ## IR Presentation
-1. [v] Problem
-2. [v] Solution
-3. [v] Market Validation, Market Size
+1. [x] Problem
+2. [x] Solution
+3. [x] Market Validation, Market Size
 4. [ ] Product
 5. [ ] Business Model
-6. [-] Adoption Strategy
+6. [ ] Adoption Strategy
 7. [ ] Competition
 8. [ ] Competitive Advantages
 9. [ ] Team
-10. [v] Press
+10. [ ] Press
 11. [ ] User Testimonials
-12. [-] Financial
+12. [ ] Financial
 
 <br>
 
 ---
 
 ## Develop
-1. [v] 테스트 라이브 스트리밍 자료 수집
-2. [v] 라이브 스트리밍 중 채팅 추출 -> Pandas
-3. [v] 채팅 분석
-4. [v] 시그니쳐 단어 분석()
-5. [v] 초당/분당 채팅률 분석
+1. [x] 테스트 라이브 스트리밍 자료 수집
+2. [x] 라이브 스트리밍 중 채팅 추출 -> Pandas
+3. [x] 채팅 분석
+4. [x] 시그니쳐 단어 분석()
+5. [x] 초당/분당 채팅률 분석
 6. [ ] 로지스틱 회귀 신경망 구현
 
 <br>
