@@ -10,8 +10,8 @@
 1. [x] Problem
 2. [x] Solution
 3. [x] Market Validation, Market Size
-4. [ ] Product
-5. [ ] Business Model
+4. [x] Product
+5. [x] Business Model
 6. [ ] Adoption Strategy
 7. [ ] Competition
 8. [ ] Competitive Advantages
@@ -31,6 +31,7 @@
 4. [x] 시그니쳐 단어 분석()
 5. [x] 초당/분당 채팅률 분석
 6. [ ] 로지스틱 회귀 신경망 구현
+7. [ ] PyQt Designer - GUI 디자인
 
 <br>
 
