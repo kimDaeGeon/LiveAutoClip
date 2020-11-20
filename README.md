@@ -16,7 +16,7 @@
 7. [ ] Competition
 8. [ ] Competitive Advantages
 9. [ ] Team
-10. [-] Press
+10. [v] Press
 11. [ ] User Testimonials
 12. [-] Financial
 
