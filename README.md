@@ -3,7 +3,6 @@
 Initial Commit : Fri November 6th 2020 ~ <br>
 제 2회 경북대학교 IT 대학 코드페어 스타트업 오디션 참가 프로젝트 <br>
 
----
 ## About
 
 - 라이브 스트리밍 방송 자동 요약, 하이라이트 추출하는 서비스입니다.
@@ -14,7 +13,6 @@ Initial Commit : Fri November 6th 2020 ~ <br>
 
 <br>
 
----
 ## IR Presentation
 1. [x] Problem
 2. [x] Solution
@@ -31,8 +29,6 @@ Initial Commit : Fri November 6th 2020 ~ <br>
 
 <br>
 
----
-
 ## Develop
 1. [x] 테스트 라이브 스트리밍 자료 수집
 2. [x] 라이브 스트리밍 중 채팅 추출 -> Pandas
@@ -44,13 +40,21 @@ Initial Commit : Fri November 6th 2020 ~ <br>
 
 <br>
 
-<br>
 
 ## References
----
 
 - [Python - Word Cloud](https://imworld.tistory.com/59)
 
 - [StackOverFlow - Python Cutting Out a Portion of Video](https://stackoverflow.com/questions/37317140/cutting-out-a-portion-of-video-python)
 
 - [Wikipedia - Logistic Regression](https://ko.wikipedia.org/wiki/%EB%A1%9C%EC%A7%80%EC%8A%A4%ED%8B%B1_%ED%9A%8C%EA%B7%80)
+
+- [StackOverFlow - PyQT5 QtMultimedia lib for Video Player](https://stackoverflow.com/questions/23953944/phonon-class-not-present-in-pyqt5)
+
+- [StackOverFlow - PyQt5 Insert Video in Ui File](https://stackoverflow.com/questions/47259825/how-to-insert-video-in-ui-file-which-made-at-qt-designer)
+
+- [PyQt5 Designer - Promote Widgets](https://4uwingnet.tistory.com/8)
+
+- [편집몬 - 다들 편집시간 얼마나 걸리시나요?(Problem)](https://editmon.com/board/index.html?id=jage&page=39&PHPSESSID=185e5c58141ffe68e29cf22ab6b034e3&no=1152&PHPSESSID=185e5c58141ffe68e29cf22ab6b034e3)
+
+- 

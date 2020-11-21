@@ -1,4 +1,4 @@
-import reqeusts
+import requests
 import json
 import sys
 import os
@@ -17,6 +17,7 @@ class ChatRequest:
         self.chat_log = pd.DataFrame(columns=["Time", "User", "Chat"])
 
     def getRequest(self):
+        chat_index = 0
         while True:
             if chat_index == 0:
                 url = "https://api.twitch.tv/v5/videos/" + self.video_id + "/comments?content_offset_seconds=0"
@@ -25,7 +26,8 @@ class ChatRequest:
                 url = "https://api.twitch.tv/v5/videos/" + self.video_id + "/comments?cursor="
                 url += next_cursor
 
-            response = request.get(url=url, params=params)
+            params = dict({"client_id": self.client_id})
+            response = requests.get(url=url, params=params)
             data = json.loads(response.text)
 
             # Make Series
@@ -41,17 +43,17 @@ class ChatRequest:
             if "_next" not in data.keys():
                 break
             next_cursor = data["_next"]
-        
-        def saveChatLog(self, file_name="chat_log.csv"):
-            # save as *.csv
-            self.chat_log.to_csv(file_name, index=False, encoding="utf-8-sig")
 
-            # save as *.txt
-            with open(filename, mode="w", encoding="utf-8-sig") as filehandler:
-                chat_content = ""
-                for idx, chat in enumerate(self.chat_log["Chat"]):
-                    chat_content += chat + '\n'
-                filehandler.writelines(chat_content)
+    def saveChatLog(self, file_name="chat_log.csv"):
+        # save as *.csv
+        self.chat_log.to_csv(file_name, index=False, encoding="utf-8-sig")
+
+        # save as *.txt
+        with open(file_name, mode="w", encoding="utf-8-sig") as file_handler:
+            chat_content = ""
+            for idx, chat in enumerate(self.chat_log["Chat"]):
+                chat_content += chat + '\n'
+            file_handler.writelines(chat_content)
 
 
 # Chat Analysis Class
@@ -60,9 +62,11 @@ class ChatAnalyze:
         if os.path.isfile(file_name):
             self.chat_log = pd.read_csv(file_name, encoding="utf-8-sig")
             
-            self.filehandler = open(file_name[0:-3]+".txt", mode="r", encoding="utf-8").read
-            self.chat_str = filehandler.readlines()
+            self.file_handler = open(file_name[0:-3]+".txt", mode="r", encoding="utf-8").read
+            self.chat_str = self.file_handler.readlines()
     
     def __del__(self):
         self.filehandler.close()
+
+
 
