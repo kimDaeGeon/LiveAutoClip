@@ -57,4 +57,5 @@ Initial Commit : Fri November 6th 2020 ~ <br>
 
 - [편집몬 - 다들 편집시간 얼마나 걸리시나요?(Problem)](https://editmon.com/board/index.html?id=jage&page=39&PHPSESSID=185e5c58141ffe68e29cf22ab6b034e3&no=1152&PHPSESSID=185e5c58141ffe68e29cf22ab6b034e3)
 
-- 
+- [유튜브 편집자 평균 월급 정보](https://sharply.tistory.com/515)
+
